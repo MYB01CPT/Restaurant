@@ -1,0 +1,214 @@
+/*Default content for body unless otherwise stated*/
+body {
+    font-family: 'Montserrat', sans-serif; /*The font*/
+    background-color: #fff; /*White backgroun*/
+    color: #000; /*The text colour*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*All of navigation*/
+nav {
+    background-color: #ffe8ea; /*Pink background for stripe*/
+    padding: 20px; /*Padding to create space between stripe edge and button*/
+    text-align: center; /*Center the buttons*/
+    width: 100%; /*Stripe spans across entire screen*/
+    width: 100vw;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    background-color: #ffe8ea;
+    color: black;
+    text-decoration: none;
+    padding: 35px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background-color: #ffb0bd;
+    border-radius: 8px;
+}
+
+/*Main content styling*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Typography for h1 and h2*/
+h1, h2, h3, h4{
+    font-family: 'Dancing Script', cursive; /*The font*/
+    color: #8c6e43; /*Text colour*/
+    margin: 0;
+    font-weight: 50;
+}
+
+h1 {
+    font-size: 57px; /*Text size*/
+}
+
+h2 {
+
+    font-size: 47px; /*Text size*/
+}
+
+h3 {
+    font-size: 38px;
+}
+
+h4 {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+/* Create a wrapper container to hold the three containers */
+.container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+.mission-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 30%;
+    margin-left: 30px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.offers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    width: 30%;
+    margin-right: 30px;
+}
+
+.socials-container, .faq-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-gallery video {
+    height: 350px;
+    width: auto;
+    border-radius: 10px;
+    border: 2px solid #8c6e43;
+}
+
+.mission-gallery, .offers-gallery{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.mission-gallery img, .offers-gallery img {
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid #8c6e43;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.social-media-links a img {
+    height: 75px;
+    padding: 10px;
+}
+
+.closing-container {
+    font-size: 25px;
+    color: #8c6e43;
+    width: 40%;
+    text-align: center;
+}
+
+footer {
+    background-color: #ffe8ea;
+    color: #000;
+    text-align: center;
+    padding: 35px;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .container-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-container, .about-container, .offers-container {
+        width: 100%; /* Make containers full width */
+        margin-top: 20px;
+        align-items: center; /* Center-align text and content */
+    }
+
+    .mission-gallery, .offers-gallery {
+        justify-content: center; /* Center images horizontally */
+    }
+
+    .mission-gallery img, .offers-gallery img {
+        height: 120px; /* Adjust image height for smaller screens */
+    }
+
+    .closing-container {
+        width: 80%; /* Expand closing container on smaller screens */
+        font-size: 20px; /* Adjust font size */
+        text-align: center; /* Center text in the closing container */
+    }
+
+    /* Center the heading texts in main */
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 16px; /* Smaller font size for mobile nav */
+        display: block; /* Stack nav links vertically on smaller screens */
+        margin-bottom: 10px; /* Space between links */
+    }
+}

@@ -1,0 +1,107 @@
+/*default font unless otherwise stated*/
+body {
+    font-family: 'Montserrat', sans-serif; /*montserrat font*//
+}
+
+header {
+    display: flex; /*turns header container into flex box*/
+    align-items: center; /*flex items dont take up full width*/
+    flex-direction: column; /*underneath one another*/
+}
+
+/*h1 font*/
+h1 {
+    font-size: 57px; /*text size*/
+    font-family: 'Dancing Script', cursive; /*dancing Script Font*/
+    color: #8c6e43; /*text colour*/
+    margin: 0; /*no large spaces*/
+    font-weight: 50; /*slim*/
+}
+
+/*h2 font*/
+h2 {
+    font-size: 38px; /*text size*/
+    font-family: 'Dancing Script', cursive; /*dancing Script Font*/
+    color: #8c6e43; /*text colour*/
+    margin: 0; /*no large spaces*/
+    font-weight: 50; /*slim*/
+}
+
+/*navigation pannel*/
+nav {
+    background-color: #ffe8ea; /*pink background for stripe*/
+    padding: 20px; /*Padding to create space between stripe edge and button*/
+    width: 100%; /*Stripe spans across entire screen*/
+}
+
+/*for the button group*/
+nav ul {
+    text-align: center;
+}
+
+/*for the button*/
+nav ul li {
+    display: inline;
+}
+
+/*text information within button*/
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 35px;
+}
+
+/*when mouse hovers*/
+nav ul li a:hover {
+    background-color: #ffb0bd; /*colour when mouse hovers*/
+    border-radius: 8px; /*radius of image*/
+}
+
+/*main content styling*/
+main {
+    padding: 20px; /*giving some space*/
+    display: flex; /*keeps everything beside one another*/
+    align-items: left; /*align content towards the left*/
+}
+
+/*image container styling*/
+.image-container img {
+    border-radius: 10px; /*radius for the border*/
+    border: 2px solid #8c6e43; /*border type, width and colour*/
+}
+
+/* Text container styling */
+.text-container {
+    margin-left: 20px; /*space between text and image*/
+}
+
+footer {
+    background-color: #ffe8ea;
+    text-align: center;
+    padding: 20px;
+    width: 100vw;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav a {
+        font-size: 16px; /* Smaller font size for mobile nav */
+        display: block; /* Stack nav links vertically on smaller screens */
+        margin-bottom: 10px; /* Space between links */
+    }
+
+    .image-container {
+        float: none; /* Remove float for smaller screens */
+        margin: 0; /* Remove margin */
+        width: 100%; /* Ensure image container takes full width */
+    }
+
+    /* Main content styling */
+    main {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .text-container {
+        margin-top: 20px; /* Space between image and text */
+    }
+}

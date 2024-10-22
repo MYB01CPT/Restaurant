@@ -1,0 +1,160 @@
+/*Default content for body unless otherwise stated*/
+body {
+    font-family: 'Montserrat', sans-serif; /*The font*/
+    background-color: #fff; /*White backgroun*/
+    color: #000; /*The text colour*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    width: 100vw;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*All of navigation*/
+nav {
+    background-color: #ffe8ea; /*Pink background for stripe*/
+    padding: 20px; /*Padding to create space between stripe edge and button*/
+    text-align: center; /*Center the buttons*/
+    width: 100%; /*Stripe spans across entire screen*/
+    width: 100vw;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    background-color: #ffe8ea;
+    color: black;
+    text-decoration: none;
+    padding: 35px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background-color: #ffb0bd;
+    border-radius: 8px;
+}
+
+/* Main content styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Typography for h1, h2, h3 */
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive; /* The font */
+    color: #8c6e43; /* Text color */
+    margin: 0;
+    font-weight: 50;
+}
+
+h1 {
+    font-size: 57px; /* Text size */
+}
+
+h2 {
+    font-size: 47px; /* Text size */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 38px; /* Text size */
+}
+
+/* Create a wrapper container to hold the three containers */
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: rows;
+    width: 100%;
+}
+
+/* Image container */
+.image-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    border-radius: 10px;
+    border: 2px solid #8c6e43;
+}
+
+/* Text containers */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 90%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+ 
+/* Footer styling */
+footer {
+    background-color: #ffe8ea;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    nav a {
+        font-size: 16px; /* Smaller font size for mobile nav */
+        display: block; /* Stack nav links vertically on smaller screens */
+        margin-bottom: 10px; /* Space between links */
+    }
+
+    /* Stack container elements vertically */
+    .container-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Center align text containers and text on mobile */
+    .text-container-1, .text-container-2 {
+        width: 100%;
+        max-width: 600px; /* Limit width for readability */
+        margin: 10px 0; /* Space between text containers */
+        text-align: center; /* Center text */
+    }
+
+    /* Adjust margin for the image container */
+    .image-container {
+        margin: 0 auto;
+        text-align: center; /* Center image */
+    }
+
+    /* Center the heading texts in main */
+    h1, h2, h3 {
+        text-align: center;
+    }
+}
